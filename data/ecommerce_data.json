@@ -1,0 +1,62 @@
+{
+  "customers": [
+    {"id": "C001", "name": "Rahul Sharma", "email": "rahul.sharma@email.com", "city": "Mumbai"},
+    {"id": "C002", "name": "Priya Mehta", "email": "priya.mehta@email.com", "city": "Delhi"},
+    {"id": "C003", "name": "Arjun Patel", "email": "arjun.patel@email.com", "city": "Bangalore"},
+    {"id": "C004", "name": "Sneha Reddy", "email": "sneha.reddy@email.com", "city": "Hyderabad"},
+    {"id": "C005", "name": "Vikram Singh", "email": "vikram.singh@email.com", "city": "Chennai"},
+    {"id": "C006", "name": "Anjali Gupta", "email": "anjali.gupta@email.com", "city": "Pune"},
+    {"id": "C007", "name": "Rohit Kumar", "email": "rohit.kumar@email.com", "city": "Kolkata"}
+  ],
+  "brands": [
+    {"id": "B001", "name": "Nike", "country": "USA"},
+    {"id": "B002", "name": "Samsung", "country": "South Korea"},
+    {"id": "B003", "name": "Levi's", "country": "USA"},
+    {"id": "B004", "name": "Apple", "country": "USA"}
+  ],
+  "categories": [
+    {"id": "CAT001", "name": "Shoes", "description": "Footwear products"},
+    {"id": "CAT002", "name": "Electronics", "description": "Electronic gadgets and devices"},
+    {"id": "CAT003", "name": "Clothing", "description": "Apparel and fashion"},
+    {"id": "CAT004", "name": "Accessories", "description": "Fashion and tech accessories"}
+  ],
+  "vendors": [
+    {"id": "V001", "name": "ABC Sports", "location": "Mumbai", "rating": 4.5},
+    {"id": "V002", "name": "Tech World", "location": "Delhi", "rating": 4.7},
+    {"id": "V003", "name": "Fashion Hub", "location": "Bangalore", "rating": 4.2},
+    {"id": "V004", "name": "Global Supplies", "location": "Chennai", "rating": 4.0}
+  ],
+  "products": [
+    {"id": "P001", "name": "Air Max 270", "price": 12000, "stock": 50, "brand_id": "B001", "category_id": "CAT001", "vendor_id": "V001"},
+    {"id": "P002", "name": "Air Force 1", "price": 9000, "stock": 80, "brand_id": "B001", "category_id": "CAT001", "vendor_id": "V001"},
+    {"id": "P003", "name": "Nike Dri-FIT T-Shirt", "price": 2500, "stock": 200, "brand_id": "B001", "category_id": "CAT003", "vendor_id": "V003"},
+    {"id": "P004", "name": "Samsung Galaxy S24", "price": 75000, "stock": 30, "brand_id": "B002", "category_id": "CAT002", "vendor_id": "V002"},
+    {"id": "P005", "name": "Samsung Galaxy Buds2", "price": 8999, "stock": 100, "brand_id": "B002", "category_id": "CAT004", "vendor_id": "V002"},
+    {"id": "P006", "name": "Samsung 4K Smart TV", "price": 55000, "stock": 15, "brand_id": "B002", "category_id": "CAT002", "vendor_id": "V002"},
+    {"id": "P007", "name": "Levi's 511 Slim Jeans", "price": 4500, "stock": 150, "brand_id": "B003", "category_id": "CAT003", "vendor_id": "V003"},
+    {"id": "P008", "name": "Levi's Classic White Shirt", "price": 3200, "stock": 120, "brand_id": "B003", "category_id": "CAT003", "vendor_id": "V004"},
+    {"id": "P009", "name": "Apple iPhone 15", "price": 80000, "stock": 25, "brand_id": "B004", "category_id": "CAT002", "vendor_id": "V002"},
+    {"id": "P010", "name": "Apple AirPods Pro", "price": 26000, "stock": 60, "brand_id": "B004", "category_id": "CAT004", "vendor_id": "V002"},
+    {"id": "P011", "name": "Nike Running Shorts", "price": 1800, "stock": 300, "brand_id": "B001", "category_id": "CAT003", "vendor_id": "V003"},
+    {"id": "P012", "name": "Apple Watch Series 9", "price": 45000, "stock": 40, "brand_id": "B004", "category_id": "CAT004", "vendor_id": "V002"}
+  ],
+  "orders": [
+    {"id": "O001", "customer_id": "C001", "date": "2024-01-15", "status": "Delivered", "total": 21000, "product_ids": ["P001", "P003"]},
+    {"id": "O002", "customer_id": "C001", "date": "2024-03-20", "status": "Delivered", "total": 75000, "product_ids": ["P004"]},
+    {"id": "O003", "customer_id": "C002", "date": "2024-02-10", "status": "Delivered", "total": 9000, "product_ids": ["P002"]},
+    {"id": "O004", "customer_id": "C002", "date": "2024-04-05", "status": "Shipped", "total": 8999, "product_ids": ["P005"]},
+    {"id": "O005", "customer_id": "C003", "date": "2024-01-28", "status": "Delivered", "total": 84500, "product_ids": ["P007", "P009"]},
+    {"id": "O006", "customer_id": "C003", "date": "2024-05-12", "status": "Processing", "total": 26000, "product_ids": ["P010"]},
+    {"id": "O007", "customer_id": "C004", "date": "2024-03-08", "status": "Delivered", "total": 55000, "product_ids": ["P006"]},
+    {"id": "O008", "customer_id": "C005", "date": "2024-02-22", "status": "Delivered", "total": 48200, "product_ids": ["P010", "P012"]},
+    {"id": "O009", "customer_id": "C006", "date": "2024-04-18", "status": "Delivered", "total": 7700, "product_ids": ["P007", "P008"]},
+    {"id": "O010", "customer_id": "C007", "date": "2024-05-01", "status": "Shipped", "total": 80000, "product_ids": ["P009"]}
+  ],
+  "special_values": [
+    {"id": "SV001", "type": "SpecialValue", "value": "banana", "description": "Special marker node 1"},
+    {"id": "SV002", "type": "SpecialValue", "value": "banana", "description": "Special marker node 2"},
+    {"id": "SV003", "type": "SpecialValue", "value": "banana", "description": "Special marker node 3"},
+    {"id": "SV004", "type": "SpecialValue", "value": "banana", "description": "Special marker node 4"},
+    {"id": "SV005", "type": "SpecialValue", "value": "banana", "description": "Special marker node 5"}
+  ]
+}
